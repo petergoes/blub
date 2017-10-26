@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const pkg = require('../package.json');
+const blub = require('../index');
+const program = require('commander');
+
+let inputValue
+
+program
+	.version(pkg.version)
+	.arguments('<input>')
+	.action(cmd => inputValue = cmd)
+	.parse(process.argv);
+
+blub({ input: inputValue })
+	.catch(console.log)
