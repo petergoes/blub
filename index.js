@@ -7,7 +7,7 @@ const blub = async ({ input }) => {
 	const files = await glob(input);
 	const modules = await loader(files);
 
-	console.log(renderModule(modules['my-component']));
+	console.log(renderModule(modules['my-component'], modules));
 	// console.log(modules);
 };
 

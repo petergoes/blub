@@ -12,7 +12,9 @@
   "dependencies": {
     "cheerio": "1.0.0-rc.2",
     "commander": "2.11.0",
+    "domutils": "1.6.2",
     "glob": "7.1.2",
+    "htmlparser2": "3.9.2",
     "lodash": "4.17.4"
   }
 }
