@@ -8,10 +8,11 @@ write a front-end framework. Please, do **not** use this framework in production
 A typical component looks like this:
 
 ```html
+<!-- my-component.html -->
 <template greet="World">
-	<div>
-		<h1>Hello ${greet}!</h1>
-		<my-other-component></my-other-component>
-	</div>
+    <div>
+        <h1>Hello ${greet}!</h1>
+        <my-other-component></my-other-component>
+    </div>
 </template>
 ```
